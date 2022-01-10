@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
         <link rel="stylesheet" href="css/MarkerCluster.css">
         <link rel="stylesheet" href="css/MarkerCluster.Default.css">
+        <link rel="stylesheet" href="css/leaflet-search.css">
         <style>
         html, body, #map {
             width: 100%;
@@ -34,6 +35,7 @@
         <script src="js/labels.js"></script>
         <script src="js/leaflet.wms.js"></script>
         <script src="js/leaflet.markercluster.js"></script>
+        <script src="js/leaflet-search.js"></script>
         <script src="data/Vorstdte_1.js"></script>
         <script src="data/Stadtmauer_2.js"></script>
         <script src="data/Linienwall_3.js"></script>
@@ -557,6 +559,13 @@
         var baseMaps = {};
         L.control.layers(baseMaps,{'<img src="legend/Leopolddaten_6.png" /> Leopolddaten': cluster_Leopolddaten_6,'<img src="legend/Gewsser_5.png" /> Gewässer': layer_Gewsser_5,'<img src="legend/Innenstadt_4.png" /> Innenstadt': layer_Innenstadt_4,'<img src="legend/Linienwall_3.png" /> Linienwall': layer_Linienwall_3,'<img src="legend/Stadtmauer_2.png" /> Stadtmauer': layer_Stadtmauer_2,'<img src="legend/Vorstdte_1.png" /> Vorstädte': layer_Vorstdte_1,"Steinhausenplan": layer_Steinhausenplan_0,}).addTo(map);
         setBounds();
+        map.addControl(new L.Control.Search({
+            layer: cluster_Leopolddaten_6,
+            initial: false,
+            hideMarkerOnCollapse: true,
+            propertyName: 'Bewohner'}));
+        document.getElementsByClassName('search-button')[0].className +=
+         ' fa fa-binoculars';
         </script>
     </body>
 </html>
