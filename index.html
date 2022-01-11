@@ -37,9 +37,9 @@
         <script src="js/leaflet.markercluster.js"></script>
         <script src="js/leaflet-search.js"></script>
         <script src="data/Vorstdte_1.js"></script>
-        <script src="data/Stadtmauer_2.js"></script>
-        <script src="data/Linienwall_3.js"></script>
-        <script src="data/Innenstadt_4.js"></script>
+        <script src="data/innereBefestigung_2.js"></script>
+        <script src="data/uereBefestigung_3.js"></script>
+        <script src="data/Stadt_4.js"></script>
         <script src="data/Gewsser_5.js"></script>
         <script src="data/Leopolddaten_6.js"></script>
         <script>
@@ -143,7 +143,7 @@
         });
         bounds_group.addLayer(layer_Vorstdte_1);
         map.addLayer(layer_Vorstdte_1);
-        function pop_Stadtmauer_2(feature, layer) {
+        function pop_innereBefestigung_2(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (i in e.target._eventParents) {
@@ -173,9 +173,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_Stadtmauer_2_0() {
+        function style_innereBefestigung_2_0() {
             return {
-                pane: 'pane_Stadtmauer_2',
+                pane: 'pane_innereBefestigung_2',
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
                 dashArray: '',
@@ -188,21 +188,21 @@
                 interactive: false,
             }
         }
-        map.createPane('pane_Stadtmauer_2');
-        map.getPane('pane_Stadtmauer_2').style.zIndex = 402;
-        map.getPane('pane_Stadtmauer_2').style['mix-blend-mode'] = 'normal';
-        var layer_Stadtmauer_2 = new L.geoJson(json_Stadtmauer_2, {
+        map.createPane('pane_innereBefestigung_2');
+        map.getPane('pane_innereBefestigung_2').style.zIndex = 402;
+        map.getPane('pane_innereBefestigung_2').style['mix-blend-mode'] = 'normal';
+        var layer_innereBefestigung_2 = new L.geoJson(json_innereBefestigung_2, {
             attribution: '',
             interactive: false,
-            dataVar: 'json_Stadtmauer_2',
-            layerName: 'layer_Stadtmauer_2',
-            pane: 'pane_Stadtmauer_2',
-            onEachFeature: pop_Stadtmauer_2,
-            style: style_Stadtmauer_2_0,
+            dataVar: 'json_innereBefestigung_2',
+            layerName: 'layer_innereBefestigung_2',
+            pane: 'pane_innereBefestigung_2',
+            onEachFeature: pop_innereBefestigung_2,
+            style: style_innereBefestigung_2_0,
         });
-        bounds_group.addLayer(layer_Stadtmauer_2);
-        map.addLayer(layer_Stadtmauer_2);
-        function pop_Linienwall_3(feature, layer) {
+        bounds_group.addLayer(layer_innereBefestigung_2);
+        map.addLayer(layer_innereBefestigung_2);
+        function pop_uereBefestigung_3(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (i in e.target._eventParents) {
@@ -232,9 +232,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_Linienwall_3_0() {
+        function style_uereBefestigung_3_0() {
             return {
-                pane: 'pane_Linienwall_3',
+                pane: 'pane_uereBefestigung_3',
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
                 dashArray: '1,5',
@@ -245,21 +245,21 @@
                 interactive: false,
             }
         }
-        map.createPane('pane_Linienwall_3');
-        map.getPane('pane_Linienwall_3').style.zIndex = 403;
-        map.getPane('pane_Linienwall_3').style['mix-blend-mode'] = 'normal';
-        var layer_Linienwall_3 = new L.geoJson(json_Linienwall_3, {
+        map.createPane('pane_uereBefestigung_3');
+        map.getPane('pane_uereBefestigung_3').style.zIndex = 403;
+        map.getPane('pane_uereBefestigung_3').style['mix-blend-mode'] = 'normal';
+        var layer_uereBefestigung_3 = new L.geoJson(json_uereBefestigung_3, {
             attribution: '',
             interactive: false,
-            dataVar: 'json_Linienwall_3',
-            layerName: 'layer_Linienwall_3',
-            pane: 'pane_Linienwall_3',
-            onEachFeature: pop_Linienwall_3,
-            style: style_Linienwall_3_0,
+            dataVar: 'json_uereBefestigung_3',
+            layerName: 'layer_uereBefestigung_3',
+            pane: 'pane_uereBefestigung_3',
+            onEachFeature: pop_uereBefestigung_3,
+            style: style_uereBefestigung_3_0,
         });
-        bounds_group.addLayer(layer_Linienwall_3);
-        map.addLayer(layer_Linienwall_3);
-        function pop_Innenstadt_4(feature, layer) {
+        bounds_group.addLayer(layer_uereBefestigung_3);
+        map.addLayer(layer_uereBefestigung_3);
+        function pop_Stadt_4(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (i in e.target._eventParents) {
@@ -295,9 +295,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_Innenstadt_4_0() {
+        function style_Stadt_4_0() {
             return {
-                pane: 'pane_Innenstadt_4',
+                pane: 'pane_Stadt_4',
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
                 dashArray: '',
@@ -308,20 +308,20 @@
                 interactive: false,
             }
         }
-        map.createPane('pane_Innenstadt_4');
-        map.getPane('pane_Innenstadt_4').style.zIndex = 404;
-        map.getPane('pane_Innenstadt_4').style['mix-blend-mode'] = 'normal';
-        var layer_Innenstadt_4 = new L.geoJson(json_Innenstadt_4, {
+        map.createPane('pane_Stadt_4');
+        map.getPane('pane_Stadt_4').style.zIndex = 404;
+        map.getPane('pane_Stadt_4').style['mix-blend-mode'] = 'normal';
+        var layer_Stadt_4 = new L.geoJson(json_Stadt_4, {
             attribution: '',
             interactive: false,
-            dataVar: 'json_Innenstadt_4',
-            layerName: 'layer_Innenstadt_4',
-            pane: 'pane_Innenstadt_4',
-            onEachFeature: pop_Innenstadt_4,
-            style: style_Innenstadt_4_0,
+            dataVar: 'json_Stadt_4',
+            layerName: 'layer_Stadt_4',
+            pane: 'pane_Stadt_4',
+            onEachFeature: pop_Stadt_4,
+            style: style_Stadt_4_0,
         });
-        bounds_group.addLayer(layer_Innenstadt_4);
-        map.addLayer(layer_Innenstadt_4);
+        bounds_group.addLayer(layer_Stadt_4);
+        map.addLayer(layer_Stadt_4);
         function pop_Gewsser_5(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -557,7 +557,7 @@
             };
             abstract.addTo(map);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="legend/Leopolddaten_6.png" /> Leopolddaten': cluster_Leopolddaten_6,'<img src="legend/Gewsser_5.png" /> Gewässer': layer_Gewsser_5,'<img src="legend/Innenstadt_4.png" /> Innenstadt': layer_Innenstadt_4,'<img src="legend/Linienwall_3.png" /> Linienwall': layer_Linienwall_3,'<img src="legend/Stadtmauer_2.png" /> Stadtmauer': layer_Stadtmauer_2,'<img src="legend/Vorstdte_1.png" /> Vorstädte': layer_Vorstdte_1,"Steinhausenplan": layer_Steinhausenplan_0,}).addTo(map);
+        L.control.layers(baseMaps,{'<img src="legend/Leopolddaten_6.png" /> Leopolddaten': cluster_Leopolddaten_6,'<img src="legend/Gewsser_5.png" /> Gewässer': layer_Gewsser_5,'<img src="legend/Stadt_4.png" /> Stadt': layer_Stadt_4,'<img src="legend/uereBefestigung_3.png" /> äußere Befestigung': layer_uereBefestigung_3,'<img src="legend/innereBefestigung_2.png" /> innere Befestigung': layer_innereBefestigung_2,'<img src="legend/Vorstdte_1.png" /> Vorstädte': layer_Vorstdte_1,"Steinhausenplan": layer_Steinhausenplan_0,}).addTo(map);
         setBounds();
         map.addControl(new L.Control.Search({
             layer: cluster_Leopolddaten_6,
